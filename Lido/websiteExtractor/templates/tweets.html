@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+
+{% block title %}
+Twitter Hashtag Search
+{%  endblock %}
+
+{% block content %}
+    <article>
+
+        <section>
+            
+			<p><font size="3" color="blue"><b>Website information</b></font></p>
+            
+                {% if news_results %}
+                    
+				{% set flag = 0 %}
+				<TABLE border="2">
+				<TR>
+					<TD style="width: 500px"><font color="green"><b>Title</b></TD>
+					<TD style="width: 500px"><font color="green"><b>Value</b></TD>
+				</TR>
+                {% for dict_item in news_results %}
+						{%if dict_item.error %}
+						
+						<p><font size="2" color="red"><i>** {{ dict_item.error }} **</i></font></p>
+						
+						{% else %}
+						
+								<TR>
+										
+										<TD><font size="2" color="blue">Website</font></TD>
+										
+										
+										<TD><a href={{ dict_item.website }} target="blank">{{ dict_item.website }}</a></TD>
+									</TR>
+								<TR>
+										
+										<TD><font size="2" color="blue">Company Description</font></TD>
+										
+										
+										<TD>{{ dict_item.aboutus }}</TD>
+									</TR>
+								<TR>
+										
+										<TD><font size="2" color="blue">Social Media - Facebook</font></TD>
+										
+										
+										<TD><a href={{ dict_item.facebook }} target="blank">{{ dict_item.facebook }}</TD>
+									</TR>
+								<TR>
+										
+										<TD><font size="2" color="blue">Social Media - Youtube</font></TD>
+										
+										
+										<TD><a href={{ dict_item.youtube }} target="blank">{{ dict_item.youtube }}</TD>
+									</TR>	
+									
+									<TR>
+										
+										<TD><font size="2" color="blue">Social Media - Linkedin</font></TD>
+										
+										
+										<TD><a href={{ dict_item.linkedin }} target="blank">{{ dict_item.linkedin }}</TD>
+									</TR>
+						
+							<TR>
+										
+										<TD><font size="2" color="blue">Social Media - Twitter</font></TD>
+										
+										
+										<TD><a href={{ dict_item.twitter }} target="blank">{{ dict_item.twitter }}</TD>
+									</TR>
+											<TR>
+										
+										<TD><font size="2" color="blue">Social Media - Pinterest</font></TD>
+										
+										
+										<TD><a href={{ dict_item.pinterest }} target="blank">{{ dict_item.pinterest }}</TD>
+									</TR>
+											<TR>
+										
+										<TD><font size="2" color="blue">Social Media - Flickr</font></TD>
+										
+										
+										<TD><a href={{ dict_item.flickr }} target="blank">{{ dict_item.flickr }}</TD>
+									</TR>
+					<TR>
+
+										<TD><font size="2" color="blue">Social Media - Instagram</font></TD>
+
+
+										<TD><a href={{ dict_item.instagram }} target="blank">{{ dict_item.instagram }}</TD>
+									</TR>
+						<TR>
+
+										<TD><font size="2" color="blue">Phone Number</font></TD>
+
+
+										<TD>{{ dict_item.phone }}</TD>
+									</TR>
+									<TR>
+
+										<TD><font size="2" color="blue">Fax</font></TD>
+
+
+										<TD>{{ dict_item.fax }}</TD>
+									</TR>
+						<TR>
+
+										<TD><font size="2" color="blue">Company Address</font></TD>
+
+
+										<TD>{{ dict_item.address }}</TD>
+									</TR>
+									<TR>
+
+										<TD><font size="2" color="blue">E-mail Address</font></TD>
+
+
+										<TD>{{ dict_item.email }}</TD>
+									</TR>
+									
+									
+									
+						{% endif %}
+                        {% endfor %}
+                        </TABLE>
+                    
+                {% else %}
+                    Query failed to fetch results.
+                {% endif %}
+        </section>
+    </article>
+{% endblock %}

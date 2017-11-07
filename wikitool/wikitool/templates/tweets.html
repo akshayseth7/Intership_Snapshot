@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}
+Twitter Hashtag Search
+{%  endblock %}
+
+{% block content %}
+    <article>
+
+        <section>
+            
+			<p><font size="3" color="blue"><b>Website information</b></font></p>
+            
+                {% if news_results %}
+                    
+				{% set flag = 0 %}
+				<TABLE border="2">
+				<TR>
+					<TD style="width: 500px"><font color="green"><b>Title</b></TD>
+					<TD style="width: 500px"><font color="green"><b>Value</b></TD>
+				</TR>
+                {% for dict_item in news_results %}
+						{%if dict_item.error %}
+						
+						<p><font size="2" color="red"><i>** {{ dict_item.error }} **</i></font></p>
+						
+						{% else %}
+						
+								<TR>
+										
+										<TD><font size="2" color="blue">Company Name</font></TD>
+										
+										
+										<TD><a href={{ dict_item.company }} target="blank">{{ dict_item.company }}</a></TD>
+									</TR>
+								<TR>
+
+										<TD><font size="2" color="blue">Wiki Link</font></TD>
+
+
+										<TD><a href={{ dict_item.wiki }} target="blank">{{ dict_item.wiki }}</a></TD>
+									</TR>
+								<TR>
+										
+										<TD><font size="2" color="blue">Content</font></TD>
+										
+										
+										<TD>{{ dict_item.content }}</TD>
+									</TR>
+
+									
+									
+						{% endif %}
+                        {% endfor %}
+                        </TABLE>
+                    
+                {% else %}
+                    Query failed to fetch results.
+                {% endif %}
+        </section>
+    </article>
+{% endblock %}

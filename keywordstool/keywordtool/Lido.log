@@ -1,0 +1,167 @@
+werkzeug : _internal.py : 2016-04-13 03:28:44,144 : 87 : INFO :  * Running on http://localhost:5000/ (Press CTRL+C to quit)
+werkzeug : _internal.py : 2016-04-13 03:28:44,174 : 87 : INFO :  * Restarting with stat
+werkzeug : _internal.py : 2016-04-13 03:29:43,298 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:29:43] "GET / HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 03:29:44,862 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:29:44] "GET /add HTTP/1.1" 200 -
+root : Demo_n_lido_scraper.py : 2016-04-13 03:29:51,266 : 95 : INFO :  --ABOUT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:51,459 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:52,255 : 387 : DEBUG : "GET / HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:52,256 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:52,980 : 387 : DEBUG : "GET / HTTP/1.1" 200 35245
+root : Demo_n_lido_scraper.py : 2016-04-13 03:29:55,357 : 111 : INFO :  --SOCIAL PROFILE STARTED-- 
+root : Demo_socialmedia.py : 2016-04-13 03:29:55,410 : 124 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 03:29:55,410 : 148 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 03:29:55,411 : 166 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 03:29:55,411 : 177 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_n_lido_scraper.py : 2016-04-13 03:29:55,411 : 124 : INFO :  --CONTACT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:55,605 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:56,161 : 387 : DEBUG : "GET /contact.html HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:56,164 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:56,911 : 387 : DEBUG : "GET /contact.html HTTP/1.1" 200 29957
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:57,448 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:58,230 : 387 : DEBUG : "GET / HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:58,232 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:29:58,934 : 387 : DEBUG : "GET / HTTP/1.1" 200 35245
+werkzeug : _internal.py : 2016-04-13 03:29:59,569 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:29:59] "POST /add HTTP/1.1" 500 -
+werkzeug : _internal.py : 2016-04-13 03:30:00,296 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:30:00] "GET /add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 03:30:00,299 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:30:00] "GET /add?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 03:30:00,322 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:30:00] "GET /add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 03:30:00,368 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:30:00] "GET /add?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 03:30:00,944 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:30:00] "GET /add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 03:30:00,951 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:30:00] "GET /add?__debugger__=yes&cmd=resource&f=source.png HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 03:45:52,694 : 87 : INFO :  * Detected change in 'C:\\Users\\aksha\\Downloads\\websiteExtractor\\websiteExtractor\\Demo_n_lido_scraper.py', reloading
+werkzeug : _internal.py : 2016-04-13 03:45:53,105 : 87 : INFO :  * Restarting with stat
+werkzeug : _internal.py : 2016-04-13 03:46:54,213 : 87 : INFO :  * Running on http://localhost:5000/ (Press CTRL+C to quit)
+werkzeug : _internal.py : 2016-04-13 03:46:54,259 : 87 : INFO :  * Restarting with stat
+werkzeug : _internal.py : 2016-04-13 03:47:26,282 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:47:26] "GET / HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 03:47:27,858 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:47:27] "GET /add HTTP/1.1" 200 -
+root : Demo_n_lido_scraper.py : 2016-04-13 03:47:38,009 : 95 : INFO :  --ABOUT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:38,203 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:38,733 : 387 : DEBUG : "GET / HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:38,736 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:39,453 : 387 : DEBUG : "GET / HTTP/1.1" 200 35245
+root : Demo_n_lido_scraper.py : 2016-04-13 03:47:41,707 : 111 : INFO :  --SOCIAL PROFILE STARTED-- 
+root : Demo_socialmedia.py : 2016-04-13 03:47:41,757 : 124 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 03:47:41,759 : 148 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 03:47:41,759 : 166 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 03:47:41,759 : 177 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_n_lido_scraper.py : 2016-04-13 03:47:41,760 : 124 : INFO :  --CONTACT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:41,986 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:43,033 : 387 : DEBUG : "GET /contact.html HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:43,038 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:43,055 : 387 : DEBUG : "GET /contact.html HTTP/1.1" 200 29957
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:43,121 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:43,911 : 387 : DEBUG : "GET / HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:43,913 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:47:44,637 : 387 : DEBUG : "GET / HTTP/1.1" 200 35245
+werkzeug : _internal.py : 2016-04-13 03:47:45,441 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:47:45] "POST /add HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 03:50:01,088 : 87 : INFO :  * Running on http://localhost:5000/ (Press CTRL+C to quit)
+werkzeug : _internal.py : 2016-04-13 03:50:01,125 : 87 : INFO :  * Restarting with stat
+werkzeug : _internal.py : 2016-04-13 03:50:02,592 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:50:02] "GET / HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 03:50:03,026 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:50:03] "GET /static/css/normalize.min.css HTTP/1.1" 304 -
+werkzeug : _internal.py : 2016-04-13 03:50:03,039 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:50:03] "GET /static/css/main.css HTTP/1.1" 304 -
+werkzeug : _internal.py : 2016-04-13 03:50:03,069 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:50:03] "GET /static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js HTTP/1.1" 304 -
+werkzeug : _internal.py : 2016-04-13 03:50:05,279 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:50:05] "GET /add HTTP/1.1" 200 -
+root : Demo_n_lido_scraper.py : 2016-04-13 03:50:12,108 : 95 : INFO :  --ABOUT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:12,279 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:13,061 : 387 : DEBUG : "GET / HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:13,062 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:13,798 : 387 : DEBUG : "GET / HTTP/1.1" 200 35245
+root : Demo_n_lido_scraper.py : 2016-04-13 03:50:16,019 : 111 : INFO :  --SOCIAL PROFILE STARTED-- 
+root : Demo_socialmedia.py : 2016-04-13 03:50:16,069 : 124 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 03:50:16,071 : 148 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 03:50:16,072 : 166 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 03:50:16,072 : 177 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_n_lido_scraper.py : 2016-04-13 03:50:16,072 : 124 : INFO :  --CONTACT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:16,161 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:17,239 : 387 : DEBUG : "GET /contact.html HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:17,240 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:17,424 : 387 : DEBUG : "GET /contact.html HTTP/1.1" 200 29957
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:17,486 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:18,009 : 387 : DEBUG : "GET / HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:18,009 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:50:18,709 : 387 : DEBUG : "GET / HTTP/1.1" 200 35245
+werkzeug : _internal.py : 2016-04-13 03:50:19,525 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:50:19] "POST /add HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 03:50:38,763 : 87 : INFO :  * Running on http://localhost:5000/ (Press CTRL+C to quit)
+werkzeug : _internal.py : 2016-04-13 03:50:38,769 : 87 : INFO :  * Restarting with stat
+werkzeug : _internal.py : 2016-04-13 03:50:45,701 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:50:45] "GET /add HTTP/1.1" 200 -
+root : Demo_n_lido_scraper.py : 2016-04-13 03:51:01,780 : 95 : INFO :  --ABOUT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:51:01,917 : 207 : INFO : Starting new HTTP connection (1): www.wowmakers.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:51:03,786 : 387 : DEBUG : "GET /about/ HTTP/1.1" 200 9994
+root : Demo_n_lido_scraper.py : 2016-04-13 03:51:05,417 : 111 : INFO :  --SOCIAL PROFILE STARTED-- 
+root : Demo_socialmedia.py : 2016-04-13 03:51:05,450 : 148 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 03:51:05,453 : 177 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_n_lido_scraper.py : 2016-04-13 03:51:05,453 : 124 : INFO :  --CONTACT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:51:05,493 : 207 : INFO : Starting new HTTP connection (1): www.wowmakers.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:51:07,644 : 387 : DEBUG : "GET /contact/ HTTP/1.1" 200 8906
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:51:07,680 : 207 : INFO : Starting new HTTP connection (1): wowmakers.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:51:09,387 : 387 : DEBUG : "GET / HTTP/1.1" 301 20
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:51:09,388 : 207 : INFO : Starting new HTTP connection (1): www.wowmakers.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 03:51:10,957 : 387 : DEBUG : "GET / HTTP/1.1" 200 9898
+root : Demo_contactus.py : 2016-04-13 03:51:10,963 : 733 : ERROR : warning Reason :: expected string or buffer
+root : Demo_contactus.py : 2016-04-13 03:51:10,963 : 733 : ERROR : warning Reason :: expected string or buffer
+root : Demo_contactus.py : 2016-04-13 03:51:10,963 : 733 : ERROR : warning Reason :: expected string or buffer
+root : Demo_contactus.py : 2016-04-13 03:51:10,964 : 733 : ERROR : warning Reason :: expected string or buffer
+werkzeug : _internal.py : 2016-04-13 03:51:11,285 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 03:51:11] "POST /add HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 04:08:06,301 : 87 : INFO :  * Detected change in 'C:\\Users\\aksha\\Downloads\\websiteExtractor\\websiteExtractor\\thermos.py', reloading
+werkzeug : _internal.py : 2016-04-13 04:08:06,783 : 87 : INFO :  * Restarting with stat
+werkzeug : _internal.py : 2016-04-13 04:09:07,934 : 87 : INFO :  * Running on http://localhost:5000/ (Press CTRL+C to quit)
+werkzeug : _internal.py : 2016-04-13 04:09:07,940 : 87 : INFO :  * Restarting with stat
+werkzeug : _internal.py : 2016-04-13 04:09:27,026 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 04:09:27] "GET / HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 04:09:28,375 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 04:09:28] "GET /add HTTP/1.1" 200 -
+root : Demo_n_lido_scraper.py : 2016-04-13 04:09:36,882 : 95 : INFO :  --ABOUT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:37,016 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:37,815 : 387 : DEBUG : "GET / HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:37,818 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:38,558 : 387 : DEBUG : "GET / HTTP/1.1" 200 35245
+root : Demo_n_lido_scraper.py : 2016-04-13 04:09:40,614 : 111 : INFO :  --SOCIAL PROFILE STARTED-- 
+root : Demo_socialmedia.py : 2016-04-13 04:09:40,665 : 124 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 04:09:40,667 : 148 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 04:09:40,667 : 166 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 04:09:40,668 : 177 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_n_lido_scraper.py : 2016-04-13 04:09:40,668 : 124 : INFO :  --CONTACT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:40,759 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:41,257 : 387 : DEBUG : "GET /contact.html HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:41,259 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:41,457 : 387 : DEBUG : "GET /contact.html HTTP/1.1" 200 29957
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:41,532 : 207 : INFO : Starting new HTTP connection (1): lucideustech.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:42,309 : 387 : DEBUG : "GET / HTTP/1.1" 301 0
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:42,309 : 207 : INFO : Starting new HTTP connection (1): lucideus.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:09:43,020 : 387 : DEBUG : "GET / HTTP/1.1" 200 35245
+werkzeug : _internal.py : 2016-04-13 04:09:43,966 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 04:09:43] "POST /add HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 04:09:56,917 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 04:09:56] "GET /add HTTP/1.1" 200 -
+root : Demo_n_lido_scraper.py : 2016-04-13 04:10:10,233 : 95 : INFO :  --ABOUT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:10:10,299 : 207 : INFO : Starting new HTTP connection (1): www.wowmakers.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:10:21,845 : 387 : DEBUG : "GET /about/ HTTP/1.1" 200 9994
+root : Demo_n_lido_scraper.py : 2016-04-13 04:10:22,017 : 111 : INFO :  --SOCIAL PROFILE STARTED-- 
+root : Demo_socialmedia.py : 2016-04-13 04:10:22,052 : 148 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 04:10:22,053 : 177 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_n_lido_scraper.py : 2016-04-13 04:10:22,053 : 124 : INFO :  --CONTACT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:10:22,092 : 207 : INFO : Starting new HTTP connection (1): www.wowmakers.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:10:24,040 : 387 : DEBUG : "GET /contact/ HTTP/1.1" 200 8906
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:10:24,065 : 207 : INFO : Starting new HTTP connection (1): www.wowmakers.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:10:25,849 : 387 : DEBUG : "GET / HTTP/1.1" 200 9898
+root : Demo_contactus.py : 2016-04-13 04:10:25,854 : 733 : ERROR : warning Reason :: expected string or buffer
+root : Demo_contactus.py : 2016-04-13 04:10:25,854 : 733 : ERROR : warning Reason :: expected string or buffer
+root : Demo_contactus.py : 2016-04-13 04:10:25,855 : 733 : ERROR : warning Reason :: expected string or buffer
+root : Demo_contactus.py : 2016-04-13 04:10:25,855 : 733 : ERROR : warning Reason :: expected string or buffer
+werkzeug : _internal.py : 2016-04-13 04:10:26,069 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 04:10:26] "POST /add HTTP/1.1" 200 -
+werkzeug : _internal.py : 2016-04-13 04:10:34,410 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 04:10:34] "GET /add HTTP/1.1" 200 -
+root : Demo_n_lido_scraper.py : 2016-04-13 04:11:52,371 : 95 : INFO :  --ABOUT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:11:52,555 : 207 : INFO : Starting new HTTP connection (1): saviance.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:11:53,260 : 387 : DEBUG : "GET //about-us HTTP/1.1" 200 69598
+root : Demo_n_lido_scraper.py : 2016-04-13 04:11:54,367 : 111 : INFO :  --SOCIAL PROFILE STARTED-- 
+root : Demo_socialmedia.py : 2016-04-13 04:11:54,562 : 124 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 04:11:54,562 : 148 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 04:11:54,563 : 157 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 04:11:54,563 : 166 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_socialmedia.py : 2016-04-13 04:11:54,565 : 177 : ERROR : Error Reason :: 'NoneType' object has no attribute 'group'
+root : Demo_n_lido_scraper.py : 2016-04-13 04:11:54,565 : 124 : INFO :  --CONTACT US STARTED-- 
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:11:54,576 : 207 : INFO : Starting new HTTP connection (1): saviance.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:11:55,305 : 387 : DEBUG : "GET //contact-us HTTP/1.1" 200 12651
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:11:55,525 : 207 : INFO : Starting new HTTP connection (1): saviance.com
+requests.packages.urllib3.connectionpool : connectionpool.py : 2016-04-13 04:11:56,384 : 387 : DEBUG : "GET / HTTP/1.1" 200 79551
+root : Demo_contactus.py : 2016-04-13 04:11:57,259 : 733 : ERROR : warning Reason :: expected string or buffer
+root : Demo_contactus.py : 2016-04-13 04:11:57,260 : 733 : ERROR : warning Reason :: expected string or buffer
+root : Demo_contactus.py : 2016-04-13 04:11:57,260 : 733 : ERROR : warning Reason :: expected string or buffer
+root : Demo_contactus.py : 2016-04-13 04:11:57,260 : 733 : ERROR : warning Reason :: expected string or buffer
+werkzeug : _internal.py : 2016-04-13 04:11:59,592 : 87 : INFO : 127.0.0.1 - - [13/Apr/2016 04:11:59] "POST /add HTTP/1.1" 200 -

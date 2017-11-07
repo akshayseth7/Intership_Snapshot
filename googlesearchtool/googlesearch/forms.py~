@@ -1,0 +1,38 @@
+from flask_wtf import Form
+from wtforms.fields import StringField
+from wtforms.fields import SelectField
+from wtforms.fields import TextField
+from flask.ext.wtf.html5 import URLField
+from wtforms.validators import DataRequired, url
+
+class BookmarkForm(Form):
+    #url = URLField('The URL for your bookmark:', validators=[DataRequired(), url()])
+
+    company = StringField('Enter Company Name:')
+    website = StringField('Enter Company Website:')
+
+    
+    #widget_policy = SelectField('widget', choices=[('foo', 'Foo'), ('bar', 'Bar')])
+    #category = SelectField('Category', choices=[], coerce=int)
+
+    def validate(self):
+        #if not self.url.data.startswith("https://"):
+               #self.url.data = "https://" + self.url.data
+
+        if not Form.validate(self):
+            return False
+
+        if not self.entityname.data:
+            self.entityname.data = "any"
+        if not self.entitytype.data:
+            self.entitytype.data = "any"
+        if not self.articlesection.data:
+            self.articlesection.data = "any"
+        if not self.sentiment.data:
+            self.sentiment.data = "any"
+        
+        if not self.event.data:
+            self.event.data = "any"
+
+
+        return True

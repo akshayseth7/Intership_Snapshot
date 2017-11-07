@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<parameters>
+		<pair>
+			<key>outputMode</key>
+			<value>json</value>
+		</pair>
+		<pair>
+			<key>start</key>
+			<value>now-180d</value>
+		</pair>
+		<pair>
+			<key>end</key>
+			<value>now</value>
+		</pair>
+		<pair>
+			<key>count</key>
+			<value>2000</value>
+		</pair>
+		<pair>
+			<key>return</key>
+			<value>enriched.url.url,enriched.url.enrichedTitle.concepts,enriched.url.enrichedTitle.docSentiment,enriched.url.title,enriched.url.enrichedTitle.entities.entity.text,enriched.url.enrichedTitle.entities.entity.type,enriched.url.enrichedTitle.entities.entity.count,enriched.url.entities.entity.text,enriched.url.entities.entity.type,enriched.url.entities.entity.sentiment,enriched.url.entities.entity.count,enriched.url.entities.entity.relevance</value>
+		</pair>
+		<pair>
+			<key>apikey</key>
+			<value>5ef587b976254935a174cafcafbfdad44974bfcb</value>
+		</pair>
+		<pair>
+			<key>internal_demo</key>
+			<value>false</value>
+		</pair>
+</parameters>

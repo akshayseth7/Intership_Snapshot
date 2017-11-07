@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block title %}
+Twitter Hashtag Search
+{%  endblock %}
+
+{% block content %}
+    <article>
+
+        <section>
+            
+			<p><font size="3" color="blue"><b>Twitter profile information</b></font></p>
+            
+                {% if news_results %}
+                    
+				{% set flag = 0 %}
+                {% for dict_item in news_results %}
+						{%if dict_item.message %}
+						
+						<p><font size="2" color="red"><i>** {{ dict_item.message }} **</i></font></p>
+						
+						{% else %}
+						
+						{%if flag==0 %}
+						<p><b>Total Results Found: </b><font size="5" color="green"><b>{{ news_results|count }}</b></font></p>
+						{% set flag=1 %}
+						{% endif %}
+						<br>
+						<br>
+						
+						<br>
+						<TABLE border="2">
+						   			
+
+									<TR>
+										<TD style="width: 500px"><font color="green"><b>Twitter Handler</b></TD>
+										<TD>{{ dict_item.displayName }}</TD>
+									</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Profile Summary</b></TD>
+										<TD>{{ dict_item.summary }}</TD>
+									</TR>
+									<TR>		
+										<TD style="width: 500px"><font color="green"><b>Official Name</b></TD>
+										<TD>{{ dict_item.preferredUsername }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Website</b></TD>
+										<TD>{{ dict_item.website }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Location</b></TD>
+										<TD>{{ dict_item.location }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Twitter Profile Link</b></TD>
+										<TD>{{ dict_item.link }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Following Count</b></TD>
+										<TD>{{ dict_item.friendsCount }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Following</b></TD>
+										<TD>{{ dict_item.friends }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Followers Count</b></TD>
+										<TD>{{ dict_item.followersCount }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Followers</b></TD>
+										<TD>{{ dict_item.followers }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Profile Image</b></TD>
+										<TD>{{ dict_item.image }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Twitter Time Zone</b></TD>
+										<TD>{{ dict_item.twitterTimeZone }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Twitter Joined Date</b></TD>
+										<TD>{{ dict_item.twitter_joined_date }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Last Tweet</b></TD>
+										<TD>{{ dict_item.last_tweet }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Last Twitter Activity</b></TD>
+										<TD>{{ dict_item.last_tweet_date }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Object Type</b></TD>
+										<TD>{{ dict_item.objectType }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Twitter Id</b></TD>
+										<TD>{{ dict_item.id }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Total Tweets</b></TD>
+										<TD>{{ dict_item.statusesCount }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Verified</b></TD>
+										<TD>{{ dict_item.verified }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Listed Count</b></TD>
+										<TD>{{ dict_item.listedCount }}</TD>
+										</TR>
+									<TR>	
+										<TD style="width: 500px"><font color="green"><b>Favorites Count</b></TD>
+										<TD>{{ dict_item.favoritesCount }}</TD>
+										</TR>
+									
+									
+						</TABLE>
+						<br>
+						<br>
+						<br>
+						<br>	
+						{% endif %}
+                        {% endfor %}
+                        
+                    
+                {% else %}
+                    Query failed to fetch results.
+                {% endif %}
+        </section>
+    </article>
+{% endblock %}

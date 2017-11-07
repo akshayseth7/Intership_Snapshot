@@ -1,0 +1,136 @@
+#!/usr/bin/env jython
+import requests
+#from multiprocessing import Pool, Queue, Manager
+from datetime import datetime
+from flask import Flask, render_template, request, flash, redirect, url_for
+import sys
+import json
+import java
+from jarray import array
+import ast
+import os
+
+from forms import BookmarkForm
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = '~t\x86\xc9\x1ew\x8bOcX\x85O\xb6\xa2\x11kL\xd1\xce\x7f\x14<y\x9e'
+
+
+bookmarks = []
+newstitles =[]
+
+def store_bookmark(url, description):
+    bookmarks.append(dict(
+        url = url,
+        description = description,
+        user = "reindert",
+        date = datetime.utcnow()
+    ))
+
+def new_bookmarks(num):
+    return sorted(bookmarks, key=lambda bm: bm['date'], reverse=True)[:num]
+
+
+@app.route('/')
+@app.route('/index')
+def index():
+    return render_template('index.html', new_bookmarks=new_bookmarks(5))
+
+
+@app.route('/add', methods=['GET', 'POST'])
+def add():
+    form = BookmarkForm()
+    newRecordList=[]
+    if form.validate_on_submit():
+
+       company = form.company.data
+       website = form.website.data
+
+
+       basePath = os.path.dirname(os.path.abspath(__file__))
+       
+       #libDir = "/home/srinath/Desktop/tempWorkspace/Enricher/target/Enricher-1.0.0-SNAPSHOT-jar-with-dependencies.jar"
+       libDir = basePath+"/YodaTwitterSearch-1.0-SNAPSHOT-jar-with-dependencies"
+       print libDir
+       #libDir = "/mnt/commons_crawl/yoda/Enricher-1.0.0-SNAPSHOT-jar-with-dependencies.jar"
+       sys.path.append(libDir)
+       #print sys.path
+       from com.crayon.enrichment import UserInputHandler
+       mc = UserInputHandler()
+       #printResults(mc.executeQuery(url,description))
+       #recordList =  java.util.Arrays.asList(mc.executeQuery(url,description))
+       recordList=[]
+       #print "**********************"
+       print event       
+       if event=='raise':
+           print "Fundraising"
+           #recordList =  mc.executeQuery(entityname,entitytype,"raise",articlesection,sentiment,publication)
+           recordList =  mc.executeQuery(entityname,entitytype,"raise",articlesection,sentiment)
+           
+       elif event=='acquire':
+           print "Acquisition"
+           #recordList =  mc.executeQuery(entityname,entitytype,"acquire",articlesection,sentiment,publication)
+           recordList =  mc.executeQuery(entityname,entitytype,"acquire",articlesection,sentiment)
+       
+       elif event=='hire':
+           print "Hire"
+           #recordList =  mc.executeQuery(entityname,entitytype,"acquire",articlesection,sentiment,publication)
+           recordList =  mc.executeQuery(entityname,entitytype,"hire",articlesection,sentiment)
+       elif event=='grade':
+           print "Grade"
+           #recordList =  mc.executeQuery(entityname,entitytype,"acquire",articlesection,sentiment,publication)
+           recordList =  mc.executeQuery(entityname,entitytype,"grade",articlesection,sentiment)
+           
+       elif event == 'any':
+           print "ANy"
+           #recordList =  mc.executeQuery(entityname,entitytype,"any",articlesection,sentiment,publication)
+           recordList =  mc.executeQuery(entityname,entitytype,"any",articlesection,sentiment)
+           
+#       recordList =  mc.executeQuery(entityname,entitytype,event,articlesection,sentiment,publication)
+       #recordList =  mc.executeQuery(entityname,entitytype,"acquire",articlesection,sentiment,publication)
+      
+       #print  newstitles[0]	   
+       #return render_template('news_disambiguation.html', news_results=newstitles)	
+
+       for b in recordList:
+           try:
+               #print dict(b)
+               dout = {k:v for k,v in dict(b).items()}
+               if "entities_body" in dout.keys():
+                   new_entities_body=ast.literal_eval(dout.get("entities_body"))
+                   #newRecordList.append(dict(b))
+                   del dout["entities_body"]
+                   dout["new_entities_body"]=new_entities_body
+                   newRecordList.append(dout)
+               elif "no_result" in dout.keys():
+                   newRecordList.append(dout)
+               elif "no_records_found" in dout.keys():
+                   newRecordList.append(dout)
+                   
+           except Exception,e:
+               print str(e)
+               pass
+           
+       #recordList = list(recordList)
+       #print type(recordList)
+       print ("Came here: something is working")
+       print  entityname, entitytype, event,articlesection, sentiment	   
+       #return render_template('news_disambiguation.html', news_results=newstitles)	   
+       return render_template('news_disambiguation.html', news_results=newRecordList)	   
+    return render_template('add.html', form=form)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
+@app.errorhandler(500)
+def page_not_found(e):
+    return render_template('500.html'), 500
+
+
+if __name__ == '__main__':
+    #sys.stdout = open('logfortoday.log', 'w')
+    #app.run(debug=True,host='0.0.0.0', port=80)
+    app.run(debug=True)

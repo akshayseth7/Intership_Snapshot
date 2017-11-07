@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% from "form_macros.html" import render_field %}
+
+{% block title %}
+Website Information Extractor
+{%  endblock %}
+
+{% block content %}
+    <section>
+        <h1>YODA - Google Snippet Extractor</h1>
+        <form action="" method="post">
+            {{form.hidden_tag()}}
+            <table>
+                
+				{{ render_field(form.website, size=20) }}
+				
+				
+				
+                <tr class="submit">
+                    <td></td>
+                    <td><button type="submit">fetch</button>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--<table>
+                {{ render_field(form.hashtag, size=20) }}
+				
+				<tr class="submit">
+                    <td></td>
+                    <td><button type="submit">Find Tweets</button>
+                    </td>
+                </tr>
+            </table>   -->         
+        </form>
+    </section>
+{% endblock %}
+
+{% block sidebar %}
+{% endblock %}
